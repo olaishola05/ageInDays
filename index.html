@@ -5,8 +5,39 @@
     <title>Age in Days</title>
 </head>
 <body>
-    
+    <style>
+        #ageInput{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 15px;
+        }
 
+        #options{
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        #ageBtn{
+            padding: 5px;
+            width: 50px;
+            align-content: center;
+        }
+    </style>
+    
+<div id="ageInput">
+    <input id="ageYear" type="text" autofocus>
+   <label for="age">Choose how to calculate your Age:</label>
+   <select id="options">
+<option value="days">Days</option>
+<option value="weeks">Weeks</option>
+<option value="months">Months</option>
+   </select>
+    <button id="ageBtn">click</button>
+</div>
 
 
     <script src="age.js"></script>

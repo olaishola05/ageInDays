@@ -1,22 +1,33 @@
 let date = new Date();
 
-let year = date.getFullYear;
+let year = date.getFullYear();
 
-function name(userName){
-    userName = prompt("which year were you born? ");
+let ageDiff = 0;
 
-    console.log("I was born in the " + userName);
-    // return userName;
+let getAge = document.getElementById("ageBtn").onclick = function name(){
+    let userAge = document.getElementById("ageYear").value;
+    alert("I was born in the year " + userAge);
+    ageDiff = year - userAge;
+
+    alert("my age is " + ageDiff);
 }
-name();
 
+document.getElementById("ageBtn").addEventListener("click", ageInDays);
 
-//calculating the age 
-
-function AgeInYear(userAge){
-    userAge = year - name(userName);
-    console.log(userAge);
+function ageInDays(days){
+    days = ageDiff * 365;
+    alert("my age in " + days+" days");
 }
-AgeInYear();
-// console.log(date);
-// console.log(name());
+
+function ageinWk(){
+    let weeks = ageDiff * 52
+
+    alert("your age in " + weeks + " weeks");
+}
+
+
+function ageInMonth(){
+    let month = ageDiff * 12;
+
+    alert("my age in " + month+ " months");
+}
