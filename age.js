@@ -6,7 +6,7 @@ let ageDiff = 0;
 
 let getAge = document.getElementById("ageBtn").onclick = function name(){
     let userAge = document.getElementById("ageYear").value;
-    alert("I was born in the year " + userAge);
+    // alert("I was born in the year " + userAge);
     ageDiff = year - userAge;
 
     alert("my age is " + ageDiff);
