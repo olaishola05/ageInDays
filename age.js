@@ -40,3 +40,4 @@ function clearInput() {
     document.getElementById("options").value = "";
     document.getElementById("ageYear").value = "";
 }
+//commit
