@@ -14,18 +14,23 @@ let getAge = document.getElementById("ageBtn").onclick = function age(){
 document.getElementById("ageBtn").addEventListener("click", OurAge);
 
 function OurAge(){
-    let value = document.getElementById("options").options[0, 1, 2].text
-    if(value[0]){
-        let days = ageDiff * 365;  
-        alert("my age in " + days+" days")
+    let value = document.getElementById("options");
+
+    for(let i = 0; i < value.length; i++){
+        if(value.options[0].text == "Days"){
+            let days = ageDiff * 365;  
+            alert("my age in " + days+" days")
+        }
+        else if(value.options[1].text == "Weeks"){
+            let weeks = ageDiff * 52;
+            alert("your age in " + weeks + " weeks");
+        }
+        else{
+            let months = ageDiff * 12
+            alert("my age in " + months+ " months");
+        }
     }
-    else if(value[0]){
-        let weeks = ageDiff * 52;
-        alert("your age in " + weeks + " weeks");
-    }
-    else{
-        alert("my age in " + option3+ " months");
-    }
+    
 }
 
 
