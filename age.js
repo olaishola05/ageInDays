@@ -33,10 +33,6 @@ function OurAge(){
     
 }
 
-
-
-//add clear features after the button has been clicked
-
 document.getElementById("ageBtn").addEventListener("click", clearInput);
 
 
