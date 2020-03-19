@@ -1,10 +1,10 @@
 let date = new Date();
-let year = date.getFullYear();
+let currentYear = date.getFullYear();
 let ageDiff = 0;
 
 let getAge = (document.getElementById("ageBtn").onclick = function age() {
   let userAge = document.getElementById("ageYear").value;
-  ageDiff = year - userAge;
+  ageDiff = currentYear - userAge;
 
   alert("my age is " + ageDiff);
 });
