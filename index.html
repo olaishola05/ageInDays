@@ -1,62 +1,63 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Age in Days</title>
-  </head>
-  <body>
-    <style>
-      #ageInput {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 50%;
-        margin: 0 auto;
-        padding: 15px;
-      }
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Age in Days</title>
+    </head>
+    <body>
+        <style>
+            #ageInput {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 50%;
+                margin: 0 auto;
+                padding: 15px;
+            }
 
-      #options {
-        margin-top: 10px;
-        margin-bottom: 20px;
-      }
+            #options {
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
 
-      #ageBtn {
-        padding: 5px;
-        width: 50px;
-        align-content: center;
-      }
+            #ageBtn {
+                padding: 5px;
+                width: 50px;
+                align-content: center;
+            }
 
-      input {
-        margin-bottom: 10px;
-      }
+            input {
+                margin-bottom: 10px;
+            }
 
-      label {
-        padding: 5px;
-      }
+            label {
+                padding: 5px;
+            }
 
-      #ageBtn {
-        margin: 0 10px;
-        border: 1px solid lightgray;
-        padding: 10px;
-        width: 100px;
-        background-color: #db1c1c;
-        color: white;
-        margin-bottom: 20px;
-      }
-    </style>
+            #ageBtn {
+                margin: 0 10px;
+                border: 1px solid lightgray;
+                padding: 10px;
+                width: 100px;
+                background-color: #db1c1c;
+                color: white;
+                margin-bottom: 20px;
+            }
+        </style>
 
-    <div id="ageInput">
-      <input id="ageYear" type="text" autofocus />
-      <label for="age">Choose how to calculate your Age:</label>
+        <div id="ageInput">
+            <input id="ageYear" type="text" autofocus />
+            <label for="age">Choose how to calculate your Age:</label>
 
-      <select id="options">
-        <option value="days">Days</option>
-        <option value="weeks">Weeks</option>
-        <option value="months">Months</option>
-      </select>
-      <button id="ageBtn">click</button>
-    </div>
+            <select name="selection" id="selectOptions">
+                <option value="">Select an Option:</option>
+                <option value="days">Days</option>
+                <option value="weeks">Weeks</option>
+                <option value="months">Months</option>
+            </select>
+            <button id="ageBtn">click</button>
+        </div>
 
-    <script src="age.js"></script>
-  </body>
+        <script src="age.js"></script>
+    </body>
 </html>
